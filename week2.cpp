@@ -1,222 +1,220 @@
 #include <iostream>
 using namespace std;
-// void first(int n) {
-//   for (int i = 0; i < n; i++) {
-//     for (int j = 0; j <= i; j++) {
-//       cout << "*" << ' ';
-//     }
-//     cout << endl;
-//   }
-// }
-// void second(int n) {
-//   for (int i = 0; i < n; i++) {
-//     for (int j = 0; j < n - i; j++) {
-//       cout << "*" << ' ';
-//     }
-//     cout << endl;
-//   }
-// }
-// void third(int n) {
-//   for (int i = 0; i < n; i++) {
-//     for (int j = 0; j < n - i; j++) {
-//       if (i == 0 || i == n - 1 || j == 0 || j == n - i - 1) {
-//         cout << "*";
-//       } else {
-//         cout << " ";
-//       }
-//     }
-//     cout << endl;
-//   }
-// }
-// void fourth(int n) {
-//   for (int i = 0; i < n; i++) {
-//     for (int j = 0; j < n - i - 1; j++) {
-//       cout << " ";
-//     }
-//     for (int j = 0; j < 2 * i + 1; j++) {
-//       cout << "*";
-//     }
-//     cout << endl;
-//   }
-// }
-// void fifth(int n) {
-//   for(int i=0;i<n;i++){
-//     for(int j=0;j<i;j++){
-//       cout<<" ";
-//     }
-//     for( int j=0; j<n-i;j++){
-//       cout<<"* ";
-//     }
-//     cout<<endl;
-//   }
-// }
-// void six(int n) {
-//   for (int i = 0; i < n; i++) {
-//     for (int j = 0; j < n - i - 1; j++) {
-//       cout << " ";
-//     }
-//     for (int j = 0; j < 2 * i + 1; j++) {
-//       if (i == 0 || i == n - 1 || j == 0 || j == n - i - 1) {
-//         cout << "*";
-//       } else {
-//         cout << " ";
-//       }
-//     }
+void first(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j <= i; j++) {
+      cout << "*" << ' ';
+    }
+    cout << endl;
+  }
+}
+void second(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n - i; j++) {
+      cout << "*" << ' ';
+    }
+    cout << endl;
+  }
+}
+void third(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n - i; j++) {
+      if (i == 0 || i == n - 1 || j == 0 || j == n - i - 1) {
+        cout << "*";
+      } else {
+        cout << " ";
+      }
+    }
+    cout << endl;
+  }
+}
+void fourth(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n - i - 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < 2 * i + 1; j++) {
+      cout << "*";
+    }
+    cout << endl;
+  }
+}
+void fifth(int n) {
+  for(int i=0;i<n;i++){
+    for(int j=0;j<i;j++){
+      cout<<" ";
+    }
+    for( int j=0; j<n-i;j++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+}
+void six(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n - i - 1; j++) {
+      cout << " ";
+    }
+    for (int j = 0; j < 2 * i + 1; j++) {
+      if (i == 0 || i == n - 1 || j == 0 || j == n - i - 1) {
+        cout << "*";
+      } else {
+        cout << " ";
+      }
+    }
 
-//     cout << endl;
-//   }
-// }
+    cout << endl;
+  }
+}
 
-// void hallowSquare(int n){
-//   for(int i=0;i<n;i++){
-//     for(int j=0;j<n;j++){
-//       if(j==0 || j==n-1 || i==0 ||i==n-1){
-//         cout<<"*";
-//       }else{
-//         cout<<" ";
-//       }
-//     }
-//     cout<<endl;
-//   }
-// }
-// void hallowInvertedPyramid(int n){
-//   for(int i=0;i<n;i++){
-//     for(int j=0;j<n-i;j++){
-//       if(i==0|| i==n-1 ||j==0 || j==n-i-1){
-//         cout<<"*";
-//       }
-//       else{
-//         cout<<" ";
-//       }
-//     }
-//     cout<<endl;
-//   }
-// }
-// void hallowFullPyramid(int n){
-//   for(int i=0;i<n;i++){
-//     for(int j=0;j<n-i-1;j++){
-//       cout<<" ";
-//     }
-//     for(int j=0;j<2*i+1;j++){
-//       if(j==0 ||j==2*i ||i==0 || i==n-1){
-//         cout<<"*";
-//       }
-//       else{
-//         cout<<" ";
-//       }
-//     }
-//     cout<<endl;
-//   }
-// }
-// int main() {
-//   int n = 5;
+void hallowSquare(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<n;j++){
+      if(j==0 || j==n-1 || i==0 ||i==n-1){
+        cout<<"*";
+      }else{
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+void hallowInvertedPyramid(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<n-i;j++){
+      if(i==0|| i==n-1 ||j==0 || j==n-i-1){
+        cout<<"*";
+      }
+      else{
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+void hallowFullPyramid(int n){
+  for(int i=0;i<n;i++){
+    for(int j=0;j<n-i-1;j++){
+      cout<<" ";
+    }
+    for(int j=0;j<2*i+1;j++){
+      if(j==0 ||j==2*i ||i==0 || i==n-1){
+        cout<<"*";
+      }
+      else{
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+int main() {
+  int n = 5;
 
-//   // first(n);
-//   // second(n);
-//   // third(n);
-//   // fourth(n);
-//   // fifth(n);
-//   // six(n);
-//   // hallowSquare(n);
-//   // hallowInvertedPyramid(n);
-//   hallowFullPyramid(n);
-// // }
-// void numHallowHalfPyramid(int n){
-//   for(int i=0;i<n;i++){
-//     for(int j=1;j<=i;j++){
-//       if(j==1 || j==i || i==1 || i==n-1){
-//         cout<<j;
-//       }
-//       else{
-//         cout<<' ';
-//       }
-//     }
-//     cout<<endl;
-//   }
+  // first(n);
+  // second(n);
+  // third(n);
+  // fourth(n);
+  // fifth(n);
+  // six(n);
+  // hallowSquare(n);
+  // hallowInvertedPyramid(n);
+  hallowFullPyramid(n);
 // }
-// void numInvertedHalfPyramid(int n){
-//   for(int i=1;i<=n;i++){
-//     for(int j=i;j<=n;j++){
-//       if(i==1 || i==n || j==i ||j==n){
-//         cout<<j;
-//       }
-//       else{
-//         cout<<" ";
-//       }
-//     }
-//     cout<<endl;
-//   }
-// }
-// void npep(int n){
-//   for(int i=1;i<=n;i++){
-//     for(int j=1;j<n-i+1;j++){
-//       cout<<" ";
-//     }
-//     for(int j=1;j<=i;j++){
-//       cout<<j;
-//     }
-//     for(int j=i;j>0;j--){
-//       if(j==i) continue;
-//       else cout<<j;
-//     }
-//     cout<<endl;
-//   }
-// }
-// int main(){
-//   int n=5;
-//   // numHallowHalfPyramid(n);
-//   // numInvertedHalfPyramid(n);
-//   npep(n);
-// }
-
-
-// #include<iostream>
-// using namespace std;
+void numHallowHalfPyramid(int n){
+  for(int i=0;i<n;i++){
+    for(int j=1;j<=i;j++){
+      if(j==1 || j==i || i==1 || i==n-1){
+        cout<<j;
+      }
+      else{
+        cout<<' ';
+      }
+    }
+    cout<<endl;
+  }
+}
+void numInvertedHalfPyramid(int n){
+  for(int i=1;i<=n;i++){
+    for(int j=i;j<=n;j++){
+      if(i==1 || i==n || j==i ||j==n){
+        cout<<j;
+      }
+      else{
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+void npep(int n){
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<n-i+1;j++){
+      cout<<" ";
+    }
+    for(int j=1;j<=i;j++){
+      cout<<j;
+    }
+    for(int j=i;j>0;j--){
+      if(j==i) continue;
+      else cout<<j;
+    }
+    cout<<endl;
+  }
+}
+int main(){
+  int n=5;
+  // numHallowHalfPyramid(n);
+  // numInvertedHalfPyramid(n);
+  npep(n);
+}
 
 
-// int main(){
-//     int n=5;
-//     int i=1;
-//     while(i<n){
-//         int j = i,count = 1;
-//         while(count<=i){
-//             cout<<j;
-//             j = j + 1;
-//             count = count + 1;
-//         }
-//         cout<<endl;
-//         i = i + 1;
-//     }
-// }
-
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cin>>n;
-//     int i=1;
-//     while(i<n){
-//         int j = i,count = 2*n+1,gaps=(n-i-1),k=1;
-//         while(k<gaps){
-//             cout<<" ";
-//             k = k + 1;
-//         }
-//         int m = 1,ch = count - 2*gaps;
-//         while(m<ch){
-//             cout<<"*";
-//             m = m + 1;
-//         }
-//         k = 1;
-//         while(k<gaps){
-//             cout<<" ";
-//             k = k + 1;
-//         }
-//         cout<<"\n";
-//         i = i + 1;
-//     }
-// }
 #include<iostream>
 using namespace std;
+
+
+int main(){
+    int n=5;
+    int i=1;
+    while(i<n){
+        int j = i,count = 1;
+        while(count<=i){
+            cout<<j;
+            j = j + 1;
+            count = count + 1;
+        }
+        cout<<endl;
+        i = i + 1;
+    }
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+    int i=1;
+    while(i<n){
+        int j = i,count = 2*n+1,gaps=(n-i-1),k=1;
+        while(k<gaps){
+            cout<<" ";
+            k = k + 1;
+        }
+        int m = 1,ch = count - 2*gaps;
+        while(m<ch){
+            cout<<"*";
+            m = m + 1;
+        }
+        k = 1;
+        while(k<gaps){
+            cout<<" ";
+            k = k + 1;
+        }
+        cout<<"\n";
+        i = i + 1;
+    }
+}
+
 
 //area of circle
 void areaOfCircle(int r){
